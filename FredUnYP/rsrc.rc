@@ -1,0 +1,23 @@
+#include "\masm32\include\resource.h"
+500 ICON "Fred1.ico"
+
+unpacker DIALOGEX 10, 10, 243, 76
+STYLE DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "Lame Unpacker For Yoda`s Protector 1.02 by stan4oo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        101,8,9,229,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        102,8,24,229,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Unpack",201,10,41,48,11,BS_FLAT
+    PUSHBUTTON      "Exit",202,182,41,48,11,BS_FLAT
+    CTEXT           "stan4oo`s lame unpacker for Yoda Protector 1.02 ",333,
+                    47,56,168,8
+    GROUPBOX        "",IDC_STATIC,0,0,240,69
+    PUSHBUTTON      "About",203,124,41,48,11,BS_FLAT
+    PUSHBUTTON      "Browse",204,69,41,48,11,BS_FLAT
+END
+
+
